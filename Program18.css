@@ -1,0 +1,58 @@
+/* Style to set flexible four columns */
+div div {
+	float: left;
+	width: 25%;
+}
+#id1 {
+	background-color: #ddd;
+}
+#id2 {
+	background-color: crimson;
+}
+#id3 {
+	background-color: lightgreen;
+}
+#id4 {
+	background-color: coral;
+}
+@media screen and (max-width: 599px) {
+	div div {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 992px) and (min-width: 600px) {
+	div div {
+		width: 50%;
+	}
+}
+
+/* Style to set flexible navigation bar*/
+ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000000;
+	list-style-type: none;
+}
+ul li > a {
+	text-decoration: none;
+	float: left;
+	padding: 14px 20px;
+	color: #ffffff;
+}
+ul li > a.active {
+	background-color: #4caf50;
+}
+ul li > a:hover {
+	background-color: #dddddd;
+	color: #000000;
+}
+@media screen and (max-width: 600px) {
+	ul li > a {
+		display: block;
+		float: none;
+	}
+}
+p {
+	clear: both;
+}
